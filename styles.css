@@ -1,0 +1,82 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Effet de transition sur les boutons et liens */
+nav ul li a, footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover, footer a:hover {
+    color: #ff5733;  /* Changer la couleur au survol */
+    transform: scale(1.1); /* Agrandir légèrement l'élément */
+}
+
+/* Effet sur les boutons */
+button, .btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #ff5733; /* Couleur d'arrière-plan au survol */
+    transform: scale(1.05); /* Effet de zoom sur le bouton */
+}
+
+/* Animation de fondu */
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Spacing and container adjustments */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header section styling */
+#accueil h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#accueil p {
+    font-size: 1.25rem;
+}
+
+/* Context section */
+#contexte h2, #taches h2, #competences h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#contexte p, #taches ul, #competences ul {
+    font-size: 1.2rem;
+}
+
+/* Contact section styling */
+#contact {
+    text-align: center;
+}
+
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
